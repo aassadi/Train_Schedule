@@ -1,0 +1,39 @@
+.title {
+   text-align: center;
+   color: darkred;
+   font-size: 50px;
+   background-color: blanchedalmond;
+ 
+}
+
+.first-line {
+   text-align: center;
+   color: black;
+   font-size: 30px;
+}
+
+.second-line {
+   color: darkgreen;
+   font-size: 20px;
+}
+
+.table-striped {
+   border-collapse: collapse;
+   width: 100%;
+   }
+   
+th, td {
+   text-align: left;
+   padding: 8px;
+   }
+   
+tr:nth-child(even) {background-color: #f2f2f2;
+   width: 100%; 
+}
+.form-control {
+    padding-right: 1250px;
+    padding-bottom: 10px;
+}
+img {
+    padding-left: 625px;
+}
