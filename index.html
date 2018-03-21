@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Train Schedules</title>
+   <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+   <link rel = "stylesheet" type = "text/css" href = "assets/style.css">  
+   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+</head>
+
+<body>
+
+<div class = "container">
+
+   <div class="jumbotron">
+       <h1 class="title">Anytime is Train Time</h1>
+       <hr class="my-4">
+       <p class= "second-line"><strong>Find your train in real time</strong></p>
+       <img src = "http://www.vancitymommyd.com/wp-content/uploads/2018/01/clipart-train-train-free-to-use-clip-art-clipartix-science-clipart.png"
+       alt="Train" height="150" width="300">
+       <hr>
+       <table class="table table-striped">
+        <thead>
+            <p id ="table title">Train Schedule</p>
+          <tr>
+            <th scope="col">Train Name</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Frequency(min)</th>
+            <th scope="col">Next Arrival</th>
+            <th scope="col">Minutes Away</th>
+          </tr>
+        </thead>
+        <tbody id = "trainTable">
+          
+
+          <tr>
+            <td>Trenton Express</td>
+            <td>Trenton</td>
+            <td>25</td>
+            <td>17:35</td>
+            <td>10</td>  
+          </tr>
+
+          <tr>
+            <td>Trenton Express</td>
+            <td>Trenton</td>
+             <td>25</td>
+            <td>17:35</td>
+            <td>10</td>
+          </tr>
+
+          <tr>
+            <td>Trenton Express</td>
+            <td>Trenton</td>
+            <td>25</td>
+            <td>17:35</td>
+            <td>10</td>
+          </tr>
+
+          <tr>
+                <td>Trenton Express</td>
+                <td>Trenton</td>
+                <td>25</td>
+                <td>17:35</td>
+                <td>10</td>
+          </tr>
+
+          <tr>
+                <td>Trenton Express</td>
+                <td>Trenton</td>
+                <td>25</td>
+                <td>17:35</td>
+                <td>10</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+      <hr>
+      <p id ="table title">Add Train</p>
+       <form>
+        <div class="form-group">
+        <label for="formGroupExampleInput">Train Name</label>
+        <br>
+        <input type="trainName" class="form-control" id="formGroupExampleInput">
+        </div>
+        <br>
+        <div class="form-group">
+        <label for="formGroupExampleInput2">Destination</label>
+        <br>
+        <input type="Destination" class="form-control" id="formGroupExampleInput2">
+        </div>
+        <br>
+        <div class="form-group">
+        <label for="formGroupExampleInput">First Train Time (HH:mm-military time)</label>
+        <br>
+        <input type="trainTime" class="form-control" id="formGroupExampleInput">
+        </div>
+        <br>
+        <div class="form-group">
+        <label for="formGroupExampleInput2">Frequency (min)</label>
+        <br>
+        <input type="Frequency" class="form-control" id="formGroupExampleInput2">
+        </div>
+        <br>
+        <button type = "submit" class = "btn btn-primary" id = "addTrainBtn">Submit</button>
+      </form>
+   </div>
+         
+   <script src= "assets/app.js" ></script>
+</body>
+
+</html>
